@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.7/build/pannellum.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #virtual-tour {
+            width: 100%;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.7/build/pannellum.js"></script>
+    <div id="virtual-tour"></div>
+    <script>
+        pannellum.viewer('virtual-tour', {
+            "type": "equirectangular",
+            "panorama": "download2.jpg",
+            "autoLoad": true,
+            "showControls":false,
+      
+        });
+        </script>
+</body>
+</html>
